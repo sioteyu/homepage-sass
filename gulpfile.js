@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		concat = require('gulp-concat'),
 		uglify = require('gulp-uglify'),
-		imagemin = require('gulp-imagemin');
+		imagemin = require('gulp-imagemin'),
+		browserSync = require('browser-sync');
 		
 var config = {
 	stylesPath: 'assets/styles',
@@ -59,10 +60,21 @@ gulp.task('js', function() {
 		.pipe(gulp.dest(config.outputDir + '/js'));
 });
 
-gulp.task('watch', function(){
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'public'
+    },
+  })
+})
+
+gulp.task('watch', ['browserSync'], function(){
 	gulp.watch([config.stylesPath + '**/*.scss', config.stylesPath + '**/*.sass', config.stylesPath + '**/*.css'], ['css']);
 	gulp.watch([config.jsPath + '**/*.js'], ['js']);
 	gulp.watch([config.imagesPath + '/**/*'], ['images']);
+	gulp.watch('public/*.html', browserSync.reload); 
+	gulp.watch('assets/scripts/*.js', browserSync.reload); 
+	gulp.watch('assets/styles/*.scss', browserSync.reload); 
 });
 
 gulp.task('default', ['icons', 'css', 'jquery', 'bootstrap-js', 'js']);
