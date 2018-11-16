@@ -4,24 +4,291 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A boilerplate for Bootstrap 4 projects">
-	<meta name="author" content="@daveflynn">
-	<title>Bootstrap 4 SASS Yarn Boilerplate</title>
+	<title>Homepage - SASS</title>
 	<link href="dist/css/main.css" rel="stylesheet">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#"><img src="images/logo/page-1.png" alt=""></a>
 
-	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="platform" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Platforms</a>
+					<div class="dropdown-menu" aria-labelledby="team">
+						<a href="#" class="dropdown-item">Special Situations and Structured Finance</a>
+						<a href="#" class="dropdown-item">Real Estate</a>
+						<a href="#" class="dropdown-item">Digital Private Equity</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="team" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Team</a>
+					<div class="dropdown-menu" aria-labelledby="team">
+						<a class="dropdown-item" href="#">Pavan C. Gidwani</a>
+						<a class="dropdown-item" href="#">Benjamin C. Sevilla</a>
+						<a class="dropdown-item" href="#">David U. Drake</a>
+						<a class="dropdown-item" href="#">Krisada A. Kaweeyarn</a>
+						<a class="dropdown-item" href="#">Randy J. McGraw</a>
+						<a class="dropdown-item" href="#">Daven A. Patel</a>
+						<a class="dropdown-item" href="#">Michael Jeremy C. Rabonza</a>
+						<a class="dropdown-item" href="#">Martin L. Syquia</a>
+						<a class="dropdown-item" href="#">Lance Isadore A. Martinez</a>
+						<a class="dropdown-item" href="#">Mary Jean V. Reyes</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Press</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+
+				<li class="nav-item search">
+					<a class="nav-link fa fa-search"></a>
+				</li>
+
+				<li class="nav-item line">
+					<a class="nav-link" href="#"></a>
+				</li>
+
+				<li class="nav-item" id="number">
+					<a href="#" class="nav-link disabled">+63 2 844 2551</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="tint">
+		<div class="content">
+			<span class="title">IFC Affiliate and Strategic Partner</span>
+			<span class="description">We are an investee of the World Bank Group’s International Finance Corporation with a 11-year proven track record investing in distressed asset portfolios and special situation investments in the region.</span>
+		</div>
+		<img src="images/bitmap/hero-image.png" alt="" class="w-100">
+	</div>
+
+	<div class="container text-center section1">
 		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="header">Bootstrap 4</h1>
-				<i class="fa fa-rocket"></i>
+			<div class="col-sm">
+				<img src="images/logo2/page-1.png" alt="" class="img-fluid">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm title">
+				Altus Capital is a specialist investor and manager, focused on special situation and structured finance investments in South East Asia
+			</div>
+		</div>
+		<div class="row description">
+			<div class="col-sm">
+				The firm, set up in 2005, started out advising on and managing distressed credit portfolios in the Philippines and Thailand on behalf of institutional investors looking for exposure in these markets.
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<button type="button" name="button">Read more</button>
 			</div>
 		</div>
 	</div>
 
+	<div class="container-fluid section2">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col">
+							<img src="images/finance/coin.png" alt="">
+						</div>
+					</div>
+					<div class="row title">
+						<div class="col">
+							Special Situations & Structured Finance
+						</div>
+					</div>
+					<div class="row description">
+						<div class="col">
+							Altus Capital’s Special Situations platform focuses on three core strategies across a wide variety of industries, geographies, and capital structure positions from senior loans to equity.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col">
+							<img src="images/estate/flaticon-1494398089-svg.png" alt="">
+						</div>
+					</div>
+					<div class="row title">
+						<div class="col">
+							Real Estate
+						</div>
+					</div>
+					<div class="row description">
+						<div class="col">
+							Altus Capital’s Real Estate strategy focuses on brownfield developments and re-development opportunities for commercial real estate in prime locations.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col">
+							<img src="images/equity/flaticon-1494399804-svg.png" alt="">
+						</div>
+					</div>
+					<div class="row title">
+						<div class="col">
+							Digital Private Equity
+						</div>
+					</div>
+					<div class="row description">
+						<div class="col">
+							ADC is the digital division of the ALTUS Group. Many interesting companies in Emerging Markets lack the capability to build and execute a digital strategy for their core business, yet this has become an essential ingredient for long-term success.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	
+	<div class="container-fluid section3 pt-5 pb-5">
+		<div class="content">
+			<div class="row title">
+				<div class="col-sm">
+					The Team
+				</div>
+			</div>
+			<div class="row description">
+				<div class="col-sm">
+					The Altus Capital team is comprised of highly skilled professionals with core competencies in and around the credit and real estate fields, with experiences that span the globe. We have brought on expertise in the digital and technology space with the launch of our digital private equity practice.
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<div class="row text-center">
+						<div class="col-sm-4 p-3">
+							<img src="images/pavan/33-c-31-f-5017969-56020-d-7-e-21874.png" alt="" class="img-fluid">
+							<p class="name">Pavan Gidwani</p>
+							<p class="position">Founder, CEO</p>
+						</div>
+						<div class="col-sm-4 p-3">
+							<img src="images/benjamin/33-c-31-f-5017969-56020-d-7-e-21874.png" alt="" class="img-fluid">
+							<p class="name">Benjamin C. Sevilla</p>
+							<p class="position">Co-Founder, Chairman, Philippine Country Officer</p>
+						</div>
+						<div class="col-sm-4 p-3">
+							<img src="images/david/33-c-31-f-5017969-56020-d-7-e-21874.png" alt="" class="img-fluid">
+							<p class="name">David U. Drake</p>
+							<p class="position">Managing Director, Chief Operating Officer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid section4">
+		<div class="row">
+			<div class="col-sm-6 left">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p class="contact">Contact us</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p class="contact-help">Reach out to us anytime. Use the form below to send us a quick message.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<form class="" action="" method="post">
+								<input type="text" name="" value="" class="form-control" placeholder="Name*">
+								<input type="text" name="" value="" class="form-control" placeholder="Email*">
+								<input type="text" name="" value="" class="form-control" placeholder="Subject*">
+								<textarea name="name" placeholder="Message*" class="form-control"></textarea>
+								<input type="submit" name="" value="Send" class="form-btn">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 right text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p class="p1">If you wish to talk someone directly</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p class="p2">Reach us at:</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p class="p3">+63 2 844 2551</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid section5">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-6 pt-5">
+				<picture>
+					<source media="(max-width: 992px)" srcset="images/logo2/page-1.png">
+					<img src="images/logo2/page-1.png" alt="Flowers" style="width:auto;">
+				</picture>
+			</div>
+			<div class="col-sm-6 col-md-8 col-lg-6 pt-5 pb-5">
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="title">Altus Capital</p>
+							<div class="content">
+								<p><a href="">About us</a></p>
+								<p><a href="">Platforms</a></p>
+								<p><a href="">The Team</a></p>
+								<p><a href="">Press</a></p>
+								<p><a href="">Contact</a></p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<p class="title">Contact</p>
+							<div class="content">
+								<p>15th Floor W Fifth Avenue</p>
+								<p>Building 5th Avenue,</p>
+								<p>Bonifacio Global City</p>
+								<p>Taguig City 1634</p>
+								<p>+63 2 844 2551</p>
+								<p>info@altuscappartners.com</p>
+								<p>www.altuscappartners.com</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/bootstrap.min.js"></script>
 	<script src="dist/js/main.js"></script>
