@@ -1,5 +1,6 @@
 @import "bootstrap"
 @import "font-awesome"
+@import "variables"
 @import "common"
 @import "section1"
 @import "section2"
@@ -49,9 +50,9 @@
 		left: 0
 		right: 0
 	.content
-		padding-top: 245px
+		padding-top: 17%
 		position: absolute
-		margin-left: 165px
+		padding-left: 11.5%
 		.title
 			color: #ffffff
 			display: block
@@ -63,3 +64,50 @@
 			font-size: 14px
 			line-height: 1.43
 			width: 540px
+@media screen and (max-width: 990px)
+	.search
+		display: none
+
+	.line
+		display: none
+
+@media screen and (max-width: $md)
+	.tint
+		.content
+			padding-top: 15%
+			padding-left: 3%
+
+			.title
+				font-size: 28px
+
+			.description
+				font-size: 14px
+
+	@media screen and (max-width: 610px)
+		.description
+			width: auto !important
+
+@media screen and (max-width: $sm)
+	.navbar
+		position: relative
+
+	.bg-dark
+		background-color: #8d3c45 !important
+
+	.dropdown-menu
+		background-color: #8d3c45
+		border: none
+		border-radius: 0
+		a
+			font-size: 14px
+
+	.tint
+		.content
+			padding-top: 40px
+			margin-left: 20px
+
+			.title
+				font-size: 24px
+
+			.description
+				display: none

@@ -1,5 +1,4 @@
 .section4
-	height: 610px
 
 	%input-design
 		background-color: inherit
@@ -15,8 +14,9 @@
 
 	.left
 		background-color: #111820
-		padding-left: 150px
+		padding-left: 10%
 		padding-top: 50px
+		padding-bottom: 45px
 
 		.form-control
 			@extend %input-design
@@ -29,7 +29,7 @@
 
 		.container
 			margin: 0
-			width: 445px
+			width: 85%
 
 		.contact
 			color: #ffffff
@@ -53,7 +53,6 @@
 		background-image: url("../../images/contact/shutterstock-194934959.png")
 		background-repeat: no-repeat
 		background-size: cover
-		width: 445px
 
 		.container
 			padding-top: 200px
@@ -72,3 +71,30 @@
 			color: #b8100a
 			font-size: 42px
 			font-weight: 300
+
+	@media screen and (max-width: $md)
+		.left
+			padding-left: 4%
+
+		.container
+			width: 104% !important
+
+	@media screen and (max-width: $sm)
+		.left
+			padding: 45px 15px
+
+			.contact
+				font-size: 18px
+
+			.contact-help
+				font-size: 12px
+
+			.form-btn
+				width: 124px
+				height: 30px
+
+		.right
+			height: 416px
+
+			.container
+				padding-top: 35%

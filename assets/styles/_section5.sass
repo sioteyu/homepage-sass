@@ -1,3 +1,39 @@
 .section5
-	height: 350px
-	padding: 0 165px 165px
+	padding: 0 11.5%
+
+	a
+		color: #9b9b9b
+		font-size: 14px
+		text-decoration: none
+
+	.title
+		color: #4a4a4a
+		font-size: 19px
+		font-weight: bold
+
+	.content
+		color: #9b9b9b
+		font-size: 14px
+		word-wrap: break-word
+
+	p
+		margin-bottom: 3%
+
+	@media screen and (max-width: $sm)
+		img
+			width: 100px
+
+		a
+			font-size: 12px
+		.title
+			font-size: 14px !important
+
+		.content
+			font-size: 12px
+
+@media screen and (max-width: $md)
+	.section5
+		padding: 0 39px 39px
+
+		.title
+			font-size: 16px
